@@ -7,7 +7,7 @@ INSERT INTO
 VALUES
 UPDATE
 SET
-DELETE
+DELETE FROM
 CREATE TABLE
 ALTER TABLE
 DROP TABLE
@@ -120,6 +120,15 @@ CREATE TABLE student (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (id)
 );
+
+-- To Update a Table Record
+
+UPDATE student
+SET name = 'Golam Kibria',
+    email = 'golam@example.com',
+    phone = '01700000000',
+    course = 'PHP'
+WHERE id = 1;
 
 -- To Create a table with foreign key:
 
