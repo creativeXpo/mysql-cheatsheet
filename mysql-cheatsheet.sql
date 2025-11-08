@@ -1,3 +1,5 @@
+-- # CREATING AND DISPLAYINGDATABASES
+
 -- To create a Database: 
 CREATE DATABASE institute; 
 
@@ -17,6 +19,8 @@ SHOW TABLES;
 DESCRIBE student;
 DESC student;
 SHOW COLUMNS FROM student;
+
+-- # CREATING TABLES
 
 -- To create a table: 
 CREATE TABLE student (
@@ -42,10 +46,30 @@ CREATE TABLE teacher (
   REFERENCES student(id)
 );
 
+-- # MODIFYING TABLES
+
 -- To change a table name: 
-ALTER TABLE teacher RENAME instructor; 
+ALTER TABLE teacher 
+RENAME instructor;
 
 -- To add a Column to the table: 
-ALTER TABLE instructor;
-ADD COLUMN 
+ALTER TABLE instructor
+ADD COLUMN address VARCHAR(100);
+
+-- To change a column name:
+ALTER TABLE instructor
+RENAME COLUMN address TO expertise_in;
+
+-- to change a column data type: 
+ALTER TABLE instructor
+MODIFY COLUMN name VARCHAR(128);
+
+-- To delete a column: 
+ALTER TABLE instructor
+DROP COLUMN expertise_in;
+
+-- To delete a table: 
+DROP TABLE instructor;
+
+-- # QUERYING DATA
 
