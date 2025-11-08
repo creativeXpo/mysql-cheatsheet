@@ -32,13 +32,20 @@ CREATE TABLE student (
 -- To Create a table with foreign key:
 
 CREATE TABLE teacher (
-  id INI PRIMARY KEY AUTO_INCREMENT,
+  id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(100),
   email VARCHAR(100),
   phone VARCHAR(100),
   course VARCHAR(100),
   student_id INT,
-  FOREIGN KEY (student_id),
+  FOREIGN KEY (student_id)
   REFERENCES student(id)
 );
+
+-- To change a table name: 
+ALTER TABLE teacher RENAME instructor; 
+
+-- To add a Column to the table: 
+ALTER TABLE instructor;
+ADD COLUMN 
 
