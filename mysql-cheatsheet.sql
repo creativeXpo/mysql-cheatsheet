@@ -28,3 +28,17 @@ CREATE TABLE student (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (id)
 );
+
+-- To Create a table with foreign key:
+
+CREATE TABLE teacher (
+  id INI PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  phone VARCHAR(100),
+  course VARCHAR(100),
+  student_id INT,
+  FOREIGN KEY (student_id),
+  REFERENCES student(id)
+);
+
