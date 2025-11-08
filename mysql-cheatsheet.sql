@@ -1,3 +1,91 @@
+-- 1. Common SQL Keywords
+
+SELECT
+FROM
+WHERE
+INSERT INTO
+VALUES
+UPDATE
+SET
+DELETE
+CREATE TABLE
+ALTER TABLE
+DROP TABLE
+JOIN
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+GROUP BY
+ORDER BY
+HAVING
+LIMIT
+DISTINCT
+
+-- 2. Common Operators
+
++ (Addition)
+- (Subtraction)
+* (Multiplication)
+/ (Division)
+% (Modulo)
+= (Equal)
+<> or != (Not Equal)
+> , < , >= , <= (Comparisons)
+AND, OR, NOT (Logical Operators)
+IN, BETWEEN, LIKE, IS NULL (Conditional Operators)
+
+-- 3. Common Functions
+
+-- String Functions 
+
+CONCAT()
+LENGTH()
+LOWER()
+UPPER()
+TRIM()
+REPLACE()
+SUBSTRING()
+
+-- Numeric Functions
+SUM()
+AVG()
+COUNT()
+MIN()
+MAX()
+ROUND()
+ABS()
+
+-- Date & Time Functions
+
+NOW()
+CURDATE()
+CURTIME()
+DATEDIFF()
+DATE_ADD()
+DATE_SUB()
+YEAR()
+MONTH()
+DAY()
+
+-- Conditional Functions
+
+IF()
+CASE WHEN THEN
+IFNULL()
+COALESCE()
+
+-- 4. Common Conditions
+
+WHERE column = value
+WHERE column <> value
+WHERE column BETWEEN value1 AND value2
+WHERE column IN (value1, value2, value3)
+WHERE column LIKE '%text%'
+WHERE column IS NULL / IS NOT NULL
+WHERE EXISTS (subquery)
+
+
+
 -- # CREATING AND DISPLAYINGDATABASES
 
 -- To create a Database: 
@@ -72,4 +160,6 @@ DROP COLUMN expertise_in;
 DROP TABLE instructor;
 
 -- # QUERYING DATA
+
+-- An example of a single table query: 
 
